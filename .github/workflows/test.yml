@@ -10,4 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test test
-        run: echo 'Testing'
+        run: echo 'updated testing abc xyz'
+
+      - name: step 2
+        run: echo 'step 2 test'
