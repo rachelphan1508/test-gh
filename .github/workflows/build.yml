@@ -1,0 +1,13 @@
+name: build
+
+on:
+  push:
+    paths:
+      - '**'
+
+jobs:
+  build_run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print
+        run: echo 'Hello World'

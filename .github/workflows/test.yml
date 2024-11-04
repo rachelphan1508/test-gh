@@ -1,0 +1,13 @@
+name: test
+
+on:
+  workflow_run:
+    workflows: build
+    types: completed
+
+jobs:
+  test_run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test test
+        run: echo 'Testing'
